@@ -982,6 +982,11 @@ void sub_8097594(void)
                 if (r0 == 1)
                 {
                     gPokemonStorageSystemPtr->unk_0004++;
+                    gPokemonStorageSystemPtr->unk_0004++;
+                    gPokemonStorageSystemPtr->unk_0004++;
+                    gPokemonStorageSystemPtr->unk_0004++;
+                    gPokemonStorageSystemPtr->unk_0004++;
+                    gPokemonStorageSystemPtr->unk_0004++;
                     break;
                 }
                 if (r0 == 0)
