@@ -1588,10 +1588,10 @@ static bool8 Fishing5(struct Task *task)
     task->tFrameCounter++;
     if (gMain.newKeys & A_BUTTON)
     {
-        task->tStep = FISHING_NO_BITE;
+        task->tStep = 4;
         if (task->tRoundsPlayed != 0)
-            task->tStep = FISHING_GOT_AWAY;
-        return 1;
+            task->tStep = 4;
+        return FALSE;
     }
     else
     {
@@ -1632,7 +1632,7 @@ static bool8 Fishing7(struct Task *task)
 {
     AlignFishingAnimationFrames();
     Menu_PrintText(gOtherText_OhABite, 4, 17);
-    task->tStep++;
+    task->tStep += 3;
     task->tFrameCounter = 0;
     return FALSE;
 }
